@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/css/shared.css" />
+    <link rel="stylesheet" href="./public/css/responsivesness.css" />
     <title>Homely</title>
   </head>
   <body>
@@ -20,10 +21,36 @@
           <a href="./views/contact.html">contact</a>
           <a href="./views/sign-in.html" class="btn">sign in</a>
         </nav>
+
+        <div id="dropdown">
+          <button id="dropdown-btn">
+            <img
+              src="./public/images/icon-hamburger.svg"
+              id="open-dropdown"
+              class="visible"
+            />
+            <img
+              src="./public/images/icon-close.svg"
+              alt=""
+              id="close-dropdown"
+            />
+          </button>
+        </div>
       </div>
     </header>
     <main>
-      <div class="background">
+      <div class="background" id="intro">
+        <div class="backdrop">
+          <div class="dropdown-menu">
+            <nav class="header-nav">
+              <a href="index.html">home</a>
+              <a href="./views/about.html">about</a>
+              <a href="./views/explore.html">explore</a>
+              <a href="./views/contact.html">contact</a>
+              <a href="./views/sign-in.html" class="btn">sign in</a>
+            </nav>
+          </div>
+        </div>
         <div class="container intro">
           <div class="left">
             <h1>Homely</h1>
@@ -253,5 +280,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./public/js/app.js"></script>
   </body>
 </html>
