@@ -36,6 +36,10 @@
   .container {
     flex-wrap: wrap;
   }
+  .background {
+    display: flex;
+  }
+
   #intro.background {
     background: url("../images/bedroom.jpg") no-repeat center;
     background-size: cover;
@@ -79,10 +83,10 @@
   }
   .service,
   .hostel,
-  c,
   .article {
     margin: 0 auto;
   }
+
   footer > .container {
     justify-content: center;
   }
@@ -91,6 +95,26 @@
   .footer-nav_content,
   .socials {
     gap: 15px;
+  }
+
+  /* ABOUT US  */
+  .main-socials {
+    margin-bottom: 3rem;
+  }
+
+  /* EXPLORE */
+  #select form {
+    flex: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* CONTACT */
+  .form-wrapper {
+    width: 80%;
+  }
+  .form-wrapper input[type="button"] {
+    width: 50%;
   }
 }
 
@@ -177,15 +201,51 @@
 }
 
 @media screen and (max-width: 550px) {
+  * p {
+    font-size: 1rem !important;
+  }
+
+  .intro {
+    width: 90%;
+    padding: 0;
+  }
   #testimonies-wrapper span {
     display: none;
   }
-  #explore-section h2 {
+  #services-section h2,
+  #explore-section h2,
+  #testimonial h2 {
     width: 80%;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    font-size: 1.3rem;
+  }
+  .hostel h4 {
+    font-size: 1.2rem;
   }
   .testimonies img {
     width: 100%;
     /* height: 250px; */
+  }
+
+  /* EXPLORE */
+  main.flex-none {
+    flex: none;
+  }
+  .form-wrapper {
+    width: 100%;
+    top: -45%;
+    margin-bottom: 0;
+  }
+  .form-wrapper form {
+    background: transparent;
+    box-shadow: none;
+    padding: 2rem;
+  }
+  .form-wrapper button {
+    border: 1px solid #240046;
+  }
+  .form-wrapper input,
+  textarea {
+    padding: 1rem;
   }
 }

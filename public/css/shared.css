@@ -311,11 +311,12 @@ footer h1 {
 }
 /* ABOUT US PAGE */
 main #aboutUs-content {
-  margin: 3.875rem 0 9.3125rem;
+  margin: 3.875rem 0;
 }
 
 #about.background {
   background: url("../images/bg-about2.png") center;
+  background-size: cover;
 }
 
 /* EXPLORE PAGE */
@@ -341,6 +342,9 @@ main #aboutUs-content {
 }
 .search-input-container #search {
   background: #e5e1e1;
+}
+#explore-hostels.container {
+  flex-wrap: wrap;
 }
 
 /* CONTACT US, SIGN IN AND SIGN UP */
