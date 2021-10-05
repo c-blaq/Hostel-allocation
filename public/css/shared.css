@@ -60,6 +60,7 @@ header .container {
 .container {
   width: 86.1%;
   margin: 0 auto;
+  max-width: 1444px;
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
@@ -148,7 +149,7 @@ footer h1 {
 
 /* INDEX OR HOME PAGE */
 .intro {
-  gap: 30px;
+  gap: 1.875rem;
 }
 .left {
   max-width: 545px;
@@ -156,6 +157,7 @@ footer h1 {
 }
 .left h1 {
   font-size: 3rem;
+  color: #240046;
 }
 .left p {
   margin: 1rem 0 2rem;
@@ -200,6 +202,7 @@ footer h1 {
 }
 .service h3 {
   margin: 1.25rem 0;
+  font-size: 1.5rem;
 }
 #services-section h2,
 #explore-section h2,
@@ -250,10 +253,13 @@ footer h1 {
 
 #more-hostels {
   text-align: right;
-  color: #ff9e00;
   margin-top: 1.5rem;
+  color: #ff9e00;
   margin-right: 6.25rem;
   font-size: 1.25rem;
+}
+#more-hostels a {
+  color: #ff9e00;
 }
 #more-hostels span::after {
   content: "-->";
@@ -315,11 +321,15 @@ main #aboutUs-content {
 }
 
 #about.background {
-  background: url("../images/bg-about2.png") center;
+  background: url("../images/bg-about.png") center;
   background-size: cover;
 }
 
 /* EXPLORE PAGE */
+#explore.background {
+  background: url("../images/bg-explore.png") center;
+  background-size: cover;
+}
 
 .explore > div.hostel {
   margin-bottom: 3rem;
@@ -349,9 +359,9 @@ main #aboutUs-content {
 
 /* CONTACT US, SIGN IN AND SIGN UP */
 
-#contact-bg,
-#sign-bg {
-  background: url("../images/bg-contact.jpg");
+#contact.background,
+#sign-up.background {
+  background: url("../images/bg-contact.png") center no-repeat;
 }
 
 .form-wrapper {
@@ -410,4 +420,72 @@ textarea {
 }
 .sign-up-show {
   display: block;
+}
+
+/*HOSTEL VIEW PAGE */
+.apartment {
+  margin: 2rem auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.apartment-view {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.apartment-view .sub-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.current-view img {
+  width: 800px;
+  height: 400px;
+}
+.sub-view img {
+  width: 185px;
+}
+
+.apartment-details h1 {
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+  color: #240046;
+}
+.apartment-details strong {
+  display: block;
+  /* margin-bottom: 0.4rem; */
+}
+
+.apartment-btn .btn:last-of-type {
+  background: none;
+  border: 1px solid #240046;
+  margin-left: 0.2rem;
+  text-align: center;
+}
+.apartment-btn a.btn:last-of-type {
+  color: #240046 !important;
+}
+.apartment-btn {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.apartment-description {
+  margin-bottom: 3rem;
+}
+.apartment-advantage {
+  margin-bottom: 5rem;
+}
+.apartment-advantage h1 {
+  color: #240046;
+  margin-bottom: 1rem;
+}
+.apartment-details .detail,
+.apartment-advantage .advantage {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  gap: 0.4rem;
 }
